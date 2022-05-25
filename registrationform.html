@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #e1dfdf;
+        }
+        .student-form {
+            background-color: #9e9e9e4e;
+            padding: 2em;
+            margin: 2em;
+            border-radius: .5em;
+        }
+        .form-heading {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 25pt;
+            color: rgb(60, 60, 60);
+            font-weight: 700;
+            margin: 0;
+            margin-bottom: -.4em;
+        }
+        .form-description {
+            font-family: "poppins";
+            font-size: 14pt;
+        }
+        .form-label{
+            font-size: 16pt;
+            padding-left:0px;
+            font-weight: 600;
+            position: flex;
+            justify-content: space-evenly;
+        }
+        .name{
+            height: 2.3em;
+            width: 16em;
+            border: 2px solid #24246298;
+            background-color: #ffffffaf;
+            border-radius: .3em;
+            margin-top: 1em;
+        }
+        .input-box{
+            height: 2.3em;
+            width: 15em;
+            border: 2px solid #24246298;
+            background-color: #ffffffaf;
+            border-radius: .3em;
+            margin-top: 1em;
+        }
+        .form-label-1 {
+            font-family: "poppins";
+            font-weight: 400;
+            box-sizing: content-box;
+            color: gray;
+        }
+        .input-box{
+            height: 2.3em;
+            width: 25em;
+            border: 2px solid #24246298;
+            background-color: #ffffffaf;
+            border-radius: .3em;
+            margin-top: 1em;
+        }
+        .address1{
+            height: 2.3em;
+            width: 50em;
+            border: 2px solid #24246298;
+            background-color: #ffffffaf;
+            border-radius: .3em;
+            margin-top: 1em;
+        }
+        .address2{
+            height: 2.3em;
+            width: 25em;
+            border: 2px solid #24246298;
+            background-color: #ffffffaf;
+            border-radius: .3em;
+            margin-top: 1em;
+        }
+        .buttons {
+            margin: 5px;
+            padding: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn{
+            background: rgb(26, 214, 29);
+            border:3px solid transparent;
+            padding: 8px;
+            color: black;
+            font-size: 12pt;
+            width: 12em;
+            font-weight: 700;
+        }
+        .btn:hover {
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <Section class="student-form">
+        <h3 class="form-heading">Student Registration Form</h3> 
+        <p class="form-description">Fill out the registration form carefully</p> 
+        <form>
+            <label for="first" class="form-label">Student Name</label>
+        </br>
+           <div>
+               <input type="text" id="first" class="name">
+               <input type="text" id="middle" class="name">
+               <input type="text" id="last" class="name">
+           </div>  
+            <label for="first" class="form-label-1 ">First Name</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="middle" class="form-label-1 ">Middle Name</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="last" class="form-label-1 ">Last Name</label>
+            <br/><br/>
+                <label for="dob" class="form-label">Birth Date</label> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label class="form-label">Gender</label><br/>
+                <input type="date" id="Date" class="input-box" placeholder="Please Select">
+                <select class="input-box">       
+                    <option>Please select</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Others</option>
+                </select><br><br>
+            <label for="Address-1" class="form-label"><b>Address</b></label>
+        </br>
+            <input type="text" id="first" class="address1"><br>
+            <label class="form-label-1 ">Street Address</label><br><br>
+            <input type="text" id="second" class="address1"><br>
+            <label class="form-label-1 ">Street Address Line 2</label><br><br>
+            <input type="text" id="third" class="address2">
+            <input type="text" id="fourth" class="address2"><br>
+            <label class="form-label-1 ">City</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label class="form-label-1 ">State/Province</label> <br>
+            <input type="text" id="last" class="address2"><br>
+            <label class="form-label-1 ">Postal/Zip code</label><br><br>
+            <label class="form-label">Student E-mail</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label class="form-label">Mobile Number</label> <br>
+            <input type="email" class="address2" placeholder="ex:myname@example.com" >
+            <input type="tel" class="address2" placeholder="(000)000-00000"><br/>
+            <label class="form-label-1">example@example.com</label><br><br>
+            <label class="form-label">Phone Number</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label class="form-label">Work Number</label><br/>
+            <input type="tel" class="address2" placeholder="(000)000-00000">
+            <input type="tel" class="address2" placeholder="(000)000-00000"><br><br>
+            <label class="form-label">Company</label><br>
+            <input type="number" class="address2"><br><br/>
+            <label class="form-label">Courses</label><br/>
+            <select class="input-box">
+                <option>Please Select</option>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>Javascript</option>
+                <option>React</option>
+                <option>Python</option>
+                <option>C</option>
+                <option>C#</option>
+                <option>C++</option>
+                <option>Others</option>
+            </select><br><br>
+            <label class="form-label">Additional Comments</label><br/>
+            <td>
+                <textarea name="comments" id="comments" cols="80" rows="10" placeholder="Type here..."></textarea>
+            </td><br><br><br>
+            <div class="buttons">
+                <button class="btn">Submit Application</button>
+                <button class="btn">Clear fields</button>
+            </div>
+        </form>
+    </Section>  
+</body>
+</html>
